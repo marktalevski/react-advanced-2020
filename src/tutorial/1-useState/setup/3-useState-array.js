@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { data } from '../../../data';
 
 const UseStateArray = () => {
-  return <h2>useState array example</h2>;
+
+  return(
+    <> 
+    </>
+  )
 };
 
 export default UseStateArray;
