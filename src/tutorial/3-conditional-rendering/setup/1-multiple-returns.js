@@ -14,7 +14,7 @@ const MultipleReturns = () => {
           return response.json()
         } else {
           setIsLoading(false)
-          setIsError(false)
+          setIsError(true)
           throw new Error(response.statusText);
         }
       })
@@ -40,7 +40,8 @@ const MultipleReturns = () => {
         <h1>Error. Cannot find user.</h1>
       </div>
     );
-  } 
+  }
+  
   return(
       <div>
         <h1>{user}</h1>
