@@ -3,19 +3,19 @@ import React, { useState } from 'react';
 // ternary operator
 
 const ShortCircuit = () => {
-  const [text, setText] = useState('The internet is not a series of tubes');
   const [isError, setIsError] = useState(true)
 
-  return(
+  return (
     <>
-      <h1>{!isError ? setText(text) : setText('Error...')}</h1>
-      <button className='btn'
-        onClick={()=> setIsError(!isError)}
-      >
+      <h1>
+        {isError ? 'Error...' : 'o hai Mark!'}
+      </h1>
+      <button className='btn' 
+        onClick={() => setIsError(!isError)}>
         Toggle Error
       </button>
     </>
-  ) 
+  ); 
 };
 
 export default ShortCircuit;
